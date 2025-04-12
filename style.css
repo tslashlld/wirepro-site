@@ -255,3 +255,87 @@ footer {
 
 /* Importação da fonte Rubik */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+
+/* Adicione ao final do seu CSS atual */
+
+/* RESPONSIVIDADE - MOBILE */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .whatsapp-btn {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  /* Banner */
+  .banner {
+    height: 250px;
+  }
+
+  .banner img {
+    object-position: center;
+  }
+
+  /* Main container */
+  main {
+    padding: 20px 10px;
+    margin-top: 100px;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  /* Sobre */
+  .sobre-container {
+    gap: 20px;
+  }
+
+  .sobre-coluna {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  /* Seção de serviços */
+  .categorias-servicos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categoria-servico {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .icone-categoria {
+    width: 72px;
+    height: 72px;
+  }
+
+  .botao-saiba-mais {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  /* Contato */
+  #contato {
+    margin-top: 60px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.85rem;
+    padding: 20px 10px;
+  }
+}
+
