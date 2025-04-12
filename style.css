@@ -72,8 +72,10 @@ body {
   gap: 8px;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  position: static;
-  margin-top: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%; /* Alinhamento vertical para o meio da navbar */
+  transform: translateY(-50%); /* Ajuste preciso */
 }
 
 .whatsapp-btn:hover {
@@ -260,9 +262,11 @@ footer {
 
 /* RESPONSIVIDADE - MOBILE */
 @media (max-width: 768px) {
+  /* Navbar */
   .navbar {
     flex-direction: column;
     align-items: center;
+    padding: 10px;
   }
 
   .navbar-links {
@@ -272,6 +276,13 @@ footer {
     gap: 10px;
   }
 
+  .whatsapp-btn {
+    position: static;
+    margin-top: 10px;
+    transform: none;
+  }
+
+  /* Banner */
   .banner {
     height: 250px;
   }
@@ -299,6 +310,7 @@ footer {
     text-align: justify;
   }
 
+  /* Seção de serviços */
   .categorias-servicos {
     display: grid;
     grid-template-columns: 1fr;
