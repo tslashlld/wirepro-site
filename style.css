@@ -256,25 +256,30 @@ footer {
 /* Importação da fonte Rubik */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
 
-/* Adicione ao final do seu CSS atual */
-
 /* RESPONSIVIDADE - MOBILE */
 @media (max-width: 768px) {
   /* Navbar */
   .navbar {
     flex-direction: column;
-    padding: 10px;
+    align-items: flex-start;
+    padding: 10px 20px;
+    position: relative;
   }
 
   .navbar-links {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    align-items: flex-start;
   }
 
   .whatsapp-btn {
-    position: static;
+    position: relative;
+    top: auto;
+    right: auto;
     transform: none;
     margin-top: 10px;
+    align-self: flex-end;
   }
 
   /* Banner */
@@ -284,6 +289,7 @@ footer {
 
   .banner img {
     object-position: center;
+    padding: 0 10px;
   }
 
   /* Main container */
@@ -308,8 +314,11 @@ footer {
 
   /* Seção de serviços */
   .categorias-servicos {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     align-items: center;
+    justify-items: center;
   }
 
   .categoria-servico {
@@ -338,4 +347,3 @@ footer {
     padding: 20px 10px;
   }
 }
-
