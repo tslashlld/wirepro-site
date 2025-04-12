@@ -332,4 +332,16 @@ footer {
     font-size: 1.3rem;
   }
 
-  .sobre-col
+  .sobre-coluna {
+    font-size: 0.9rem;
+  }
+
+  .categoria-servico {
+    padding: 0.8rem;
+  }
+
+  .botao-saiba-mais {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
